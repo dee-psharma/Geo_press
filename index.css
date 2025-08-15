@@ -1,0 +1,26 @@
+
+body{
+    background-color: black;
+}
+
+    .navbar {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    
+}
+
+.logo {
+    height: 40px;
+}
+
+.menu a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: white;
+}
+
+.live h1{
+    color:red;
+}
+
