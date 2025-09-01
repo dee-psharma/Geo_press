@@ -23,7 +23,7 @@ function headlineNews() {
 }
     headlineNews();
 
-// FOR CARS 
+// FOR CARDS 
 
 
 function card(data){
