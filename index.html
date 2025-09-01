@@ -3,103 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CBS News</title>
+    <link rel="stylesheet" href="index.css">
 </head>
-
-<link rel="stylesheet" href="index.css">
-
 <body>
-
-    <!-- NAV BAR -->
-
-    <nav>
+    <header>
+        <div class="logo">GEO PRESS</div>
+        <nav>
+            <a href="#">Latest</a> | <a href="#">Local News</a> | <a href="#">Live</a> | <a href="#">Shows</a> 
+        </nav>
+        <div class="search">Q</div>
+    </header>
+    <div class="nav-bar">
+        <a href="#">Delhi</a> | <a href="#">Mathura</a> | <a href="#">Education</a> | <a href="#">World</a> | <a href="#">Politics</a> | <a href="#">HealthWatch</a> | <a href="#">MoneyWatch</a> | <a href="#">Entertainment</a> | <a href="#">Crime</a> | <a href="#">Sports</a>
+    </div>
+    <main class="forntpage">
+      <div class="left-side ">
+         <div id="headline-news">
+          <div
+          class="h-text"
+          ><div class="h-title" ></div>
+          <div class="h-description" style="width: 300px;"></div>
+          <div class="h-date"></div>
+        </div>
+          <img class="h-image" />
+        </div>
+        <div class="cards"  >
+          <div id="card"></div>
+        </div>
+      </div>
        
-        <div class="navbar">
-            <img src="./geoPressLogo.jpg" alt="Logo" class="logo" height="40px">
-            <div class="menu">
-                <a href="">NEWS</a>
-                <a href="">SHOWS</a>
-                <a href="">LIVE</a>
+
+        <div id="side-news"></div>
+    </main>
 
 
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAEeklEQVR4AexW22scVRg/Z2ays2ndtEn3ktnMbNlY7UNtrBqUCoLGUpC2YIsXLEhRWhDRJ/8A8wf4puBbLUGlEARRC60EV/pQiWBTKYHYzWaTnd3ZyyRZrWvZ3bkcv2/jtGd3ZqN98anLfPPdfuf85nzntgL5n38PCH0FZ4wJG9nsUHVlJbGZy+1C3wfaJvCfSsoMY8d6ufx0VddPbZbLb7vh8AkiSYedUOgY+rVi8ZVqsXjYNM3INlyd1L8SmmtrT5mMveG020OOZf0yoigXYpr2RSKV+hr0l+B/JlI6LzAmC5b1+rquPwOjpp3eA159CaenpwWzWHyBCMJ+wXUvJ/bunUuOj69RSm2+H/CdPWNjOpD/6LRa3wHZ+KZhHAEd2HdgEDt85+zZ56GRvFatzkY1rYQxT8xSabpWKl2BMn7kxVDH0+kKYGeJ49BaofAixnolkBA6e0JwnGhMVecmJyctvtEGzBV8yIeEsaNQtw9gXk8S7gcjtkc07QdJFHeZhcIkl+qYPsJ8Ph8mrvskLIgMNu6guFebkDDnQsUFmffRxnYhSboqiOJEpz8M/iM+wogoHoScoSiKCdr3KKqageAsSA1GeTlaLn8Ftu+JjI7WCKVGJBye4JM+QkbpI8x1f+NBvXZcVV8DScQ17SXaU3IeK4riLejrYT7WRVjP53fDVz0UT6UKPKjXhv2mbBjG0Wq1Ot6b4/1lXdehCpF6vb7bi3cRuqFQBBZCE+fAA/RqJGPN5pLjuleoZeXqxeLjvRjP7yw4QWiQZjOY0HacEJQU1oXXxK9hcx+EKgx5GQD3JUSMa9t3XEJ2oo3SNUI4MZqUsa5ViCBebFFc5n2wsyB9HyqKsmTbLQ/QTWjbfzFCQouLiyEP0KsTicTKACGHAHcG5NmEqv7Ui/F8PK1EQna2ZLnhxboIh9Pp33EO1aGhlAcI0sOq+isQzYD0JcN27587N4Y6FovVUKN0EWLAdZwVGP+jaPcTOIk+hhtiAY62C/0wGLdtez9jDM9fmEaMEOIjJIODN+D4UP6sVOJbkO53zTCeg6X+HkQPUULOAPGrYPueP3R9RBCEtAg3DJ/0Ecbj8QaldKHpOFOwjQZ5cMe2beDpWH1fLJuVW657xKH05jBMEw/0EWIyqigLMIrGDkqPVyqVu0sac3AoXAXGT8G+CeX6HE4cPObA3XrwI83BwROM0nZibGx+K3rvHUhIKWVRy5qDY6ktWdZJc3VVudeEELhF3gWiiYSmvcnHa7XaKOypU1BK25Gk77EfPo92ICEmaDrd/OT8+W/hbrpFRPHYerE4ZeRyqUwmI2HeE/Qxjnnaah2H0S/vUZRvksnkHQ/D676ECIJ95Cqa9jO7ffsifG0zJMtTj+3b95ZpGKerhcLLpq6fRl8aGJjCPJPli3ABz4N9d1ViP7xsS+gB4wcONOBvxDWQGRIOX7JareshQVilongd5voS/L2Ygdw1XHBem35a6JcIiuOXwyY2kun0Emz+G9FkcimWShkYD8IHxe6LMKiD+439DQAA//+sCAUFAAAABklEQVQDAEUvxUjnMygVAAAAAElFTkSuQmCC" alt="image">
 
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAACKUlEQVR4AeyWu0sjQRjA806WJOWdBwfCcQfXHBz3AMFKFEGw0EJBQXx12vjnCAqKqJ0gaKOtiKCIKIjYiTaKlkk278TfCFmcnd3ZNRorw3zMt/M9fjPffNkkFHjnzwfQKng2m20rFArfkR+maX6t1+sxy/gCRVtSkhok78zn81ORSGSAvD1IdygU6i8Wi5PAezOZzGfWfA9XILB2Eg6T/FcwGIy6ZPwWjUYHS6XSbxe7suwIFDBO0AcooUQ4LNRqtY5cLvfXwaQsKUBgBifrUjw9FsLh8H9i2z3cAgqQ+/rj92T25JT2n33N/qwAgf20O/l95oSf6OYvOn8JiHMbQLcG0eWxbLFYzD+Q1k9ZkU0qbFibQzohjCDyqlGpVOw5pXySkfbOS9YmHuhWUxcmAQ3DeNA5+7FVq1VtDglI/UskvUKaGnSpyaavdcESUDiWy+UzMTcjvAZPveIUYDqdvifw0CvQbuf+H+Lx+Ll93f6sAIUD36Uz7uJY6D7llmZZ5C015uXvCBRByWTyhB3vcK+uTSDuDPtBIpHYRh9DX+KlPyLi3cQVKAJIcAN0k+/WFmU+4hQXJL5EP2HepUHWsD+VEegOMUOsr3LScXTHoQU2IlKp1B1lPuW3bx/IHvoxs9KNQLfY5Ciy5Ab1BWyA/cyceAPgBLLsBH1zoNgU0HXmGaArQKfRrdESoMhOeReYZ4FKfz9aBgQWADqPzAm9IS0FNiDP53cHPgIAAP//bzzKyAAAAAZJREFUAwCJXLs5G6G6cAAAAABJRU5ErkJggg==" alt="search">
+
+    <footer>
+        <div class="footer-container">
+            
+            <div class="footer-section">
+                <h3>Follow Us On</h3>
+                <ul>
+                    <li>YouTube</li>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>X</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Privacy</h3>
+                <ul>
+                    <li>Privacy Policy</li>
+                    <li>Cookie Details</li>
+                    <li>Terms of Use</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>More from GEO PRESS</h3>
+                <ul>
+                    <li>Newsletters</li>
+                    <li>Podcasts</li>
+                    <li>Brand Studio</li>
+                    
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li>Help</li>
+                    <li>Feedback</li>
+                </ul>
             </div>
         </div>
-
-
-        
-    </nav>
-
-    <div class="live">
-        <h1>GEOPRESS Live</h1>
-    </div>
-    <div class="collection_cards">
-
-        <div class="card">
-    <!--card 1-->
-  <div class="card__shine"></div>
-  <div class="card__glow"></div>
-  <!--card content-->
-  <div class="card__content">
-    <div class="card__badge">NEWS headline</div>
-    <div style="--bg-color: #a78bfa" class="card__image"></div>
-   <!--headline-->
-    <div class="card__text">
-      <p class="card__title">Kremlin gives details about Trump-Putin summit as Europe braces</p>
-      
-    </div>
-    <!--buttons-->
-    <div style="display: flex; flex-direction: row;">
-        <div class="loader"></div>
-        <p>ajdgndklajgnad</p>
-    </div>
-  </div>
-</div>
-
-<div class="card">
-<!--card 2-->
-  <div class="card__shine"></div>
-  <div class="card__glow"></div>
-  <!--card content-->
-  <div class="card__content">
-    <div class="card__badge">NEWS headline</div>
-    <div style="--bg-color: #a78bfa" class="card__image"></div>
-   <!--headline-->
-    <div class="card__text">
-      <p class="card__title">Kremlin gives details about Trump-Putin summit as Europe braces</p>
-      
-    </div>
-    <!--buttons-->
-    <div style="display: flex; flex-direction: row;">
-        <div class="loader"></div>
-        <p>ajdgndklajgnad</p>
-    </div>
-  </div>
-</div>
-
-<div class="card">
-<!--card 3-->
-  <div class="card__shine"></div>
-  <div class="card__glow"></div>
-  <!--card content-->
-  <div class="card__content">
-    <div class="card__badge">NEWS headline</div>
-    <div style="--bg-color: #a78bfa" class="card__image"></div>
-   <!--headline-->
-    <div class="card__text">
-      <p class="card__title">Kremlin gives details about Trump-Putin summit as Europe braces</p>
-      
-    </div>
-    <!--buttons-->
-    <div style="display: flex; flex-direction: row;">
-        <div class="loader"></div>
-        <p>ajdgndklajgnad</p>
-    </div>
-  </div>
-</div>
-
-    </div>
+        <div class="footer-bottom">
+            <p>Copyright ©2025 GEO PRESS. All rights reserved.</p>
+        </div>
+    </footer>
+    <script type="module" src="/Script.js">
+    
+  </script>
 </body>
 </html>
