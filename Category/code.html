@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CBS News - Trump to sign Department of War Order</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Open+Sans:wght@400;600&display=swap');
+
+    /* Reset and base */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Merriweather', serif;
+      background-color: #fff;
+      color: #111;
+      line-height: 1.6;
+      font-size: 18px;
+    }
+
+    a {
+      color: #0645ad;
+      text-decoration: underline;
+    }
+    a:hover,
+    a:focus {
+      color: #0b3d91;
+      outline: none;
+    }
+
+    /* Header Navigation */
+    header {
+      background-color: #111;
+      color: #fff;
+      font-family: 'Open Sans', sans-serif;
+      user-select: none;
+    }
+
+    .top-nav, .second-nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 6px 15px;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      white-space: nowrap;
+      overflow-x: auto;
+    }
+    .top-nav {
+      font-weight: 600;
+    }
+    .top-nav > ul, .second-nav > ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 18px;
+    }
+
+    .top-nav > ul > li > a,
+    .second-nav > ul > li > a,
+    .second-nav > ul > li > span {
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+      padding: 6px 3px;
+      display: inline-block;
+      line-height: 1;
+      transition: color 0.2s ease;
+    }
+
+    .top-nav > ul > li:hover > a,
+    .second-nav > ul > li:hover > a,
+    .second-nav > ul > li:hover > span {
+      color: #eee;
+    }
+
+    .logo-container {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .logo-container svg {
+      fill: #fff;
+      height: 30px;
+      width: 115px;
+      user-select: none;
+    }
+
+    /* Article Hero Section */
+    .hero-container {
+      background-color: #121212;
+      color: #fff;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      gap: 20px;
+      padding: 20px 15px 35px 15px;
+      font-family: 'Merriweather', serif;
+    }
+
+    .hero-text {
+      flex: 1 1 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .live-label {
+      display: inline-block;
+      background-color: #d00000;
+      color: #fff;
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: 0.07em;
+      padding: 6px 12px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      border-radius: 3px;
+      user-select: none;
+    }
+
+    .headline {
+      font-weight: 900;
+      font-size: 2.3rem;
+      margin: 0 0 14px 0;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+
+    .divider {
+      border: 0;
+      border-top: 1px solid #444;
+      margin: 8px 0 18px 0;
+      width: 100%;
+    }
+
+    .author-info {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 13px;
+      margin-bottom: 15px;
+      color: #bbb;
+    }
+    .author-info strong {
+      font-weight: 600;
+      color: #fff;
+    }
+    .author-info time {
+      color: #ccc;
+    }
+    .author-info a {
+      color: #bbb;
+      text-decoration: none;
+    }
+    .author-info a:hover,
+    .author-info a:focus {
+      color: #fff;
+      outline: none;
+    }
+
+    /* Social share icons container */
+    .social-share {
+      display: flex;
+      gap: 15px;
+    }
+    .social-share a {
+      color: #bbb;
+      text-decoration: none;
+      font-size: 20px;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      transition: color 0.3s ease;
+    }
+    .social-share a:hover,
+    .social-share a:focus {
+      color: #fff;
+      outline: none;
+    }
+
+    /* Simple SVG icon style */
+    .social-share svg {
+      fill: currentColor;
+      height: 18px;
+      width: 18px;
+    }
+
+    /* Hero Image */
+    .hero-image {
+      flex: 1 1 38%;
+      max-width: 460px;
+      position: relative;
+      border-radius: 3px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgb(0 0 0 / 0.3);
+    }
+    .hero-image img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      aspect-ratio: 16 / 9;
+      vertical-align: middle;
+    }
+
+    /* Article Content */
+    main.article-content {
+      max-width: 800px;
+      margin: 45px auto 80px auto;
+      padding: 0 15px;
+      font-family: 'Merriweather', serif;
+      font-weight: 400;
+      color: #222;
+    }
+    main.article-content p {
+      margin-bottom: 1.3em;
+    }
+
+    /* Scrollbar styling for nav overflow */
+    .top-nav::-webkit-scrollbar,
+    .second-nav::-webkit-scrollbar {
+      height: 6px;
+    }
+    .top-nav::-webkit-scrollbar-thumb,
+    .second-nav::-webkit-scrollbar-thumb {
+      background: #333;
+      border-radius: 3px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 1024px) {
+      .hero-container {
+        flex-direction: column;
+        padding: 20px 15px 30px 15px;
+      }
+      .hero-text, .hero-image {
+        flex: none;
+        max-width: 100%;
+      }
+      .hero-image {
+        margin-top: 20px;
+        max-height: 250px;
+        overflow: hidden;
+      }
+      .headline {
+        font-size: 1.75rem;
+      }
+    }
+    @media (max-width: 480px) {
+      .top-nav > ul, .second-nav > ul {
+        gap: 10px;
+        font-size: 13px;
+      }
+      .logo-container {
+        margin: 0 10px;
+      }
+      .headline {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header role="banner" aria-label="Main Navigation">
+    <nav class="top-nav" aria-label="Primary navigation">
+      <ul>
+        <li><a href="#" aria-haspopup="true" aria-expanded="false">Latest ▼</a></li>
+        <li><a href="#" aria-haspopup="true" aria-expanded="false">Local News ▼</a></li>
+        <li><a href="#" aria-haspopup="true" aria-expanded="false">Live ▼</a></li>
+        <li><a href="#" aria-haspopup="true" aria-expanded="false">Shows ▼</a></li>
+        <li><a href="#" aria-haspopup="false">...</a></li>
+      </ul>
+      <div class="logo-container" aria-label="CBS News logo">
+        <svg role="img" aria-labelledby="CBSlogoTitle" viewBox="0 0 119 29" xmlns="http://www.w3.org/2000/svg"><title id="CBSlogoTitle">CBS News Logo</title><path d="M56.29 14.642c0 3.1-2.547 5.595-5.686 5.595-3.15 0-5.684-2.495-5.684-5.595 0-3.097 2.534-5.59 5.684-5.59 3.14 0 5.686 2.492 5.686 5.59zm-8.113 4.412a7.157 7.157 0 0 0 6.995-8.71 7.155 7.155 0 0 0-6.995 8.71zm-7.856-4.412c0-6.7 5.892-12.13 13.176-12.13 7.282 0 13.176 5.43 13.176 12.13 0 6.7-5.894 12.132-13.176 12.132-7.284 0-13.176-5.43-13.176-12.13zm38.69-8.134h-6.363c-.761 0-1.38.61-1.38 1.35v10.093c0 .74.618 1.35 1.38 1.35h6.362c.76 0 1.377-.61 1.377-1.35V8.51c0-.74-.618-1.34-1.38-1.34zm-5.04 9.704v-7.055h3.68v7.054h-3.68zm-10.607-4.755-1.114 3.37V19.53h-1.57v-10.02h1.544v4.787l1.232-3.375h1.7l-2.065 5.7 2.257 5.533h-1.68zm-19.187-1.84v2.916c0 1.596-1.26 2.546-2.807 2.546-1.375 0-2.53-1.038-2.53-2.51 0-1.458 1.187-2.544 2.52-2.544h.37l.103-.607c.11-.64.482-1.178 1.07-1.522.565-.348 1.316-.485 2.007-.426v1.792c-.46-.08-.795-.088-1.073.153-.301.27-.424.739-.424 1.132zm-.224 1.087c0-.55-.356-.953-.91-.953-.56 0-.88.4-.88.994 0 .572.358.975.934.975a.88.88 0 0 0 .856-.983zm27.272 1.23v-3.45h-.197c-.97 0-1.637.668-1.637 1.673 0 1.03.69 1.777 1.42 1.777.08 0 .13 0 .16-.002zm-14.34-1.16c0-2.23 1.56-3.865 3.85-3.865 2.24 0 3.82 1.53 3.82 3.76 0 2.214-1.547 3.854-3.847 3.854-2.252 0-3.825-1.554-3.825-3.75zm21.143-4.96h1.272v10.02h-1.273v-10.02zm-3.797 2.516c0-.745-.588-1.34-1.323-1.34h-1.883v10.03h1.306v-4.19h.6l2.553 4.19h1.434l-2.646-4.59c1.124-.07 1.684-.9 1.684-1.73zm-37.93-3.6v2.512h-.052c-.682-1.596-2.38-1.79-3.624-1.496-.83.172-1.445.885-1.445 1.796v6.286h-1.28v-10h1.26v1.566h.05c.43-1.028 1.88-1.68 3.392-1.68a3.246 3.246 0 0 1 1.624.53z"/></svg>
+      </div>
+      <ul aria-label="Top stories navigation">
+        <li><a href="#">U.S.</a></li>
+        <li><a href="#">Jobs Report</a></li>
+        <li><a href="#">Powerball Jackpot</a></li>
+        <li><a href="#">World</a></li>
+        <li><a href="#">Politics</a></li>
+        <li><a href="#">HealthWatch</a></li>
+        <li><a href="#">MoneyWatch</a></li>
+        <li><a href="#">Entertainment</a></li>
+        <li><a href="#">Crime</a></li>
+        <li><a href="#">Sports</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero-container" aria-label="Top story - Trump Department of War order and live updates">
+    <div class="hero-text">
+      <span class="live-label" aria-live="polite">Live updates</span>
+      <h1 class="headline">
+        Trump to sign Department of War order and live updates on administration announcements
+      </h1>
+      <hr class="divider" />
+      <div class="author-info">
+        By <strong>Kathryn Watson</strong>, <strong>Caitlin Yilek</strong>, <strong>Melissa Quinn</strong><br />
+        <time datetime="2025-09-05T10:52:00-04:00">September 5, 2025 / 10:52 AM EDT</time> &bull; CBS News
+      </div>
+      <nav class="social-share" aria-label="Share on social media">
+        <a href="#" aria-label="Share on Facebook" title="Share on Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.406.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.127V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.466.099 2.795.143v3.243l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.31h3.59l-.467 3.622h-3.123V24h6.116c.73 0 1.324-.594 1.324-1.324V1.325C24 .593 23.405 0 22.675 0z"/></svg>
+        </a>
+        <a href="#" aria-label="Share on X (Twitter)" title="Share on X (Twitter)">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M23.954 4.57a10 10 0 0 1-2.825.775A4.93 4.93 0 0 0 23.337 3a9.986 9.986 0 0 1-3.127 1.196 4.92 4.92 0 0 0-8.384 4.482A13.944 13.944 0 0 1 1.67 3.149a4.822 4.822 0 0 0 .15 3.288 4.92 4.92 0 0 1-2.23-.616v.06a4.92 4.92 0 0 0 3.946 4.83 4.996 4.996 0 0 1-2.224.085 4.935 4.935 0 0 0 4.602 3.417 9.868 9.868 0 0 1-6.1 2.104c-.398 0-.788-.023-1.17-.067a13.945 13.945 0 0 0 7.557 2.209c9.054 0 14.002-7.496 14.002-13.987 0-.21-.004-.423-.014-.633a9.936 9.936 0 0 0 2.457-2.548l-.047-.02z"/></svg>
+        </a>
+        <a href="#" aria-label="Share on Reddit" title="Share on Reddit">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M24 12c0-6.627-5.373-12-12-12S0 5.373 0 12c0 5.991 4.388 10.94 10.125 11.854v-8.385H7.078v-3.47h3.047v-2.64c0-3.018 1.792-4.68 4.533-4.68 1.312 0 2.686.235 2.686.235v2.953h-1.513c-1.492 0-1.953.927-1.953 1.875v2.257h3.328l-.532 3.47h-2.796v8.385C19.613 22.94 24 17.991 24 12z"/></svg>
+        </a>
+        <a href="#" aria-label="Copy article link" title="Copy article link">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10.59 13.41a2 2 0 0 1 0-2.82l2.12-2.12a2 2 0 0 1 2.82 2.82l-1.4 1.4-1.54 1.56zM5 18v-4.6l1.58 1.58a4 4 0 0 0 5.65 0l2.12-2.12a4 4 0 1 0-5.66-5.66L6 9.34V5h8v8h-3v-1h4v-6H6v4.6l1.58-1.58a2 2 0 1 1 2.82 2.82l-2.12 2.12a2 2 0 0 1-2.82 0L5 14.41z"/></svg>
+        </a>
+      </nav>
+    </div>
+    <div class="hero-image">
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e4d5a3e4-af79-4983-ad7e-1eadec94d5f2.png" alt="Donald Trump speaking at a podium in the Oval Office with golden curtains and ornate decor in the background" onerror="this.onerror=null;this.src='https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/89aff72b-6d8f-4e93-8131-508113388ff1.png';" />
+    </div>
+  </section>
+
+  <main role="main" class="article-content">
+    <p>President Trump is signing an executive order Friday to begin the process of renaming the Department of Defense to the <a href="#">Department of War</a>, bringing back the name that was last used for the agency in the late 1940s.</p>
+    <p>His order is expected to reverse the naming decision that called the department the Department of Defense since 1947, when the National Security Act consolidated the War Department and the Department of the Navy and created the U.S. Air Force, unifying them under one agency for military affairs.</p>
+  </main>
+</body>
+</html>
+
