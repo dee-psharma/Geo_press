@@ -1,0 +1,124 @@
+.Main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.left-side{
+    
+    width: 20%;
+    padding: 20px;
+    border: 1px  solid gray;
+   background-color: #fff;
+  border-right: 1px solid #e5e7eb; /* light gray divider */
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+.logo {
+  line-height: 1.2;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+.logo-txt {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+.logo p {
+  font-size: 12px;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Navigator */
+.navigator {
+  margin-top: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+.navi-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 8px;
+}
+.navigator div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.navigator div:hover {
+  background: #f3f4f6;
+}
+.navigator span {
+  font-size: 13px;
+  color: #111827;
+}
+
+/* Quick Start */
+.quick {
+  margin-top: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+.quick-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 8px;
+}
+.quick div {
+  margin-bottom: 10px;
+}
+.quick span {
+  font-size: 13px;
+  font-weight: 500;
+  margin-right: 6px;
+}
+.quick p {
+  font-size: 12px;
+  color: #ef4444; /* red for Live */
+  display: inline;
+  margin: 0;
+}
+.quick h3 {
+  font-size: 12px;
+  margin: 0;
+  color: #6b7280;
+}
+.quick div:last-child p {
+  color: #111827;
+  font-weight: 600;
+}
+
+/* User Section */
+.user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 12px;
+  border-top: 1px solid #e5e7eb;
+}
+.user img {
+  width: 32px;
+  height: 32px;
+  background: #e5e7eb;
+  border-radius: 50%;
+}
+.user h2 {
+  font-size: 14px;
+  margin: 0;
+  font-weight: 600;
+}
+.user p {
+  font-size: 12px;
+  margin: 0;
+  color: #6b7280;
+}
+.map-container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
