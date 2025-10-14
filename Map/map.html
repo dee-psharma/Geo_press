@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeoPress Live Map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+ <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-slate-950 text-white">
+
+  <!-- Navbar -->
+  
+ <!-- Navbar -->
+  <nav class="relative bg-gray-800/50 p-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <img src="https://media.istockphoto.com/id/929047972/vector/world-news-flat-vector-icon-news-symbol-logo-illustration-business-concept-simple-flat.jpg?s=612x612&w=0&k=20&c=5jpcJ7xejjFa2qKCzeOXKJGeUl7KZi9qoojZj1Kq_po=" alt="Logo" class="h-8 w-auto"/>
+      </div>
+
+      <!-- Menu Links -->
+      <div class="hidden sm:flex space-x-4">
+        <a href="/Geo_press/Home/src/Home.html" class="px-3 py-2 rounded-md text-white bg-gray-950/50 text-sm font-medium">home</a>
+
+        <a href="/Dashbord/src/index.html" class="px-3 py-2 rounded-md text-white bg-gray-950/50 text-sm font-medium">Dashboard</a>
+        <a href="/map/src/map.html" class="px-3 py-2 rounded-md text-gray-300 hover:bg-white/5 hover:text-white text-sm font-medium">Map view</a>
+        <a href="/Geo_press/LIVE/live.html" class="px-3 py-2 rounded-md text-gray-300 hover:bg-white/5 hover:text-white text-sm font-medium">live news</a>
+        <a href="#" class="px-3 py-2 rounded-md text-gray-300 hover:bg-white/5 hover:text-white text-sm font-medium">Calendar</a>
+      </div>
+
+      <!-- Profile & Notifications -->
+      <div class="flex items-center space-x-4">
+        <button class="relative p-1 text-gray-400 hover:text-white">
+          <span class="sr-only">View notifications</span>
+          <!-- Bell icon -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-6 h-6">
+            <path d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <!-- User Profile -->
+        <div class="relative">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" 
+            alt="User" class="h-8 w-8 rounded-full"/>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="text-center py-16 ">
+    <div class="">
+      <div class="absolute top-24 left-1/2 transform -translate-x-1/2 inline-flex gap-2 px-4 py-2 rounded-full bg-teal-500/10 border border-teal-500/20 text-teal-400 text-sm font-medium">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A2 2 0 013 15.382V5.618a2 2 0 011.553-1.894L9 2m6 0l5.447 2.724A2 2 0 0121 5.618v9.764a2 2 0 01-1.553 1.894L15 20m-6 0V2m6 18V2" />
+        </svg>
+        <span>Live Preview</span>
+      </div>
+      <h2 class="text-5xl md:text-6xl font-bold text-white mb-4 mt-20">See GeoPress in Action</h2>
+      <p class="text-xl text-gray-300 mb-10">Real-time incident mapping with neon markers and intelligent clustering</p>
+    </div>
+
+    <!-- Map -->
+    <div id="map" class="w-full max-w-4xl h-[500px] mx-auto rounded-xl shadow-lg mt-20"></div>
+  </section>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script type="module" src="/Dashbord/index.js"></script>
+</body>
+</html>
