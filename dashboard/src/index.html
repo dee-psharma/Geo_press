@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./output.css" rel="stylesheet" />
+  <title>GeoAlert</title>
+</head>
+<body class="bg-[#121212] text-white">
+
+  <!-- Navbar -->
+  <nav class="relative bg-gray-800/50 p-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <img src="https://media.istockphoto.com/id/929047972/vector/world-news-flat-vector-icon-news-symbol-logo-illustration-business-concept-simple-flat.jpg?s=612x612&w=0&k=20&c=5jpcJ7xejjFa2qKCzeOXKJGeUl7KZi9qoojZj1Kq_po=" alt="Logo" class="h-8 w-auto"/>
+      </div>
+
+      <!-- Menu Links -->
+      <div class="hidden sm:flex space-x-4">
+        <a href="/Geo_press/Home/src/Home.html" class="px-3 py-2 rounded-md text-white bg-gray-950/50 text-sm font-medium">home</a>
+
+        <a href="#" class="px-3 py-2 rounded-md text-white bg-gray-950/50 text-sm font-medium">Dashboard</a>
+        <a href="/map/src/map.html" class="px-3 py-2 rounded-md text-gray-300 hover:bg-white/5 hover:text-white text-sm font-medium">Map view</a>
+        <a href="/Geo_press/LIVE/live.html" class="px-3 py-2 rounded-md text-gray-300 hover:bg-white/5 hover:text-white text-sm font-medium">live news</a>
+        <a href="#" class="px-3 py-2 rounded-md text-gray-300 hover:bg-white/5 hover:text-white text-sm font-medium">Calendar</a>
+      </div>
+
+      <!-- Profile & Notifications -->
+      <div class="flex items-center space-x-4">
+        <button class="relative p-1 text-gray-400 hover:text-white">
+          <span class="sr-only">View notifications</span>
+          <!-- Bell icon -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-6 h-6">
+            <path d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <!-- User Profile -->
+        <div class="relative">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" 
+            alt="User" class="h-8 w-8 rounded-full"/>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="text-center py-12 px-6">
+    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 bg-clip-text text-transparent">
+      Real-Time Local Incidents
+    </h1>
+    <p class="text-gray-400 max-w-2xl mx-auto text-lg">
+      Stay informed about crimes, accidents, and alerts in your area with live updates and interactive mapping
+    </p>
+  </section>
+
+  <!-- Stats Cards -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 mx-6">
+    <div class="bg-[#1e1e2f] border border-gray-800 rounded-xl p-6 hover:border-cyan-500/50 transition-all duration-300">
+      <div class="flex items-center space-x-4">
+        <div class="bg-cyan-500/10 p-3 rounded-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 17l6-6 4 4 8-8"/>
+          </svg>
+        </div>
+        <div>
+          <p class="text-2xl font-bold text-gray-100">1,247</p>
+          <p class="text-sm text-gray-400">Active Incidents</p>
+        </div>
+      </div>
+    </div>
+    <div class="bg-[#1e1e2f] border border-gray-800 rounded-xl p-6 hover:border-amber-500/50 transition-all duration-300">
+      <div class="flex items-center space-x-4">
+        <div class="bg-amber-500/10 p-3 rounded-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01M5.07 19h13.86c1.1 0 1.99-.9 1.99-2L12 3 3.08 17c0 1.1.89 2 1.99 2z"/>
+          </svg>
+        </div>
+        <div>
+          <p class="text-2xl font-bold text-gray-100">34</p>
+          <p class="text-sm text-gray-400">Critical Alerts</p>
+        </div>
+      </div>
+    </div>
+    <div class="bg-[#1e1e2f] border border-gray-800 rounded-xl p-6 hover:border-green-500/50 transition-all duration-300">
+      <div class="flex items-center space-x-4">
+        <div class="bg-green-500/10 p-3 rounded-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m1-3a9 9 0 11-9 9 9 9 0 019-9z"/>
+          </svg>
+        </div>
+        <div>
+          <p class="text-2xl font-bold text-gray-100">98.5%</p>
+          <p class="text-sm text-gray-400">Resolution Rate</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Filter Section -->
+  <div class="w-[900px] bg-[#1e1e2f] border border-gray-800 rounded-xl shadow-2xl p-6 m-auto mb-12">
+    <div class="flex flex-col lg:flex-row gap-4">
+
+      <!-- Search Input -->
+      <div class="flex-1 relative">
+        <svg xmlns="http://www.w3.org/2000/svg" class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M10 18a8 8 0 100-16 8 8 0 000 16z" />
+        </svg>
+        <input id="searchInput" type="text" placeholder="Search by area or location..."
+          class="w-full bg-[#121212] text-gray-200 pl-12 pr-4 py-3 rounded-lg border border-gray-700 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 outline-none transition-all duration-200"/>
+      </div>
+
+      <!-- Category Filter -->
+      <select id="categoryFilter" class="bg-[#121212] text-gray-200 pl-4 pr-10 py-3 rounded-lg border border-gray-700 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 outline-none cursor-pointer">
+        <option value="">All Categories</option>
+        <option value="crime">Crime</option>
+        <option value="accident">Accident</option>
+        <option value="fire">Fire Emergency</option>
+        <option value="medical">Medical Emergency</option>
+        <option value="weather">Weather Alert</option>
+        <option value="other">Other</option>
+      </select>
+
+      <!-- Severity Filter -->
+      <select id="severityFilter" class="bg-[#121212] text-gray-200 pl-4 pr-10 py-3 rounded-lg border border-gray-700 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 outline-none cursor-pointer">
+        <option value="">All Severity</option>
+        <option value="critical">Critical</option>
+        <option value="high">High</option>
+        <option value="medium">Medium</option>
+        <option value="low">Low</option>
+      </select>
+
+      <!-- Search Button -->
+      <button id="searchBtn" class="px-8 py-3 bg-gradient-to-r from-cyan-500 to-cyan-600 text-white rounded-lg hover:from-cyan-600 hover:to-cyan-700 transition-all duration-200 shadow-lg shadow-cyan-500/30 hover:shadow-cyan-500/50">
+        Search
+      </button>
+    </div>
+  </div>
+
+  <!-- Results Container -->
+  <div id="resultsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 max-w-7xl mx-auto"></div>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
